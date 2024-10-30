@@ -1,0 +1,79 @@
+body{
+    height: 100vh;
+    background-color: grey;
+}
+
+#plateau {
+    height: 80vh;
+    width: 80vh;
+    /* couleur du plateau et donc des cases "blanches" */
+    background-color: white;
+    margin: 10vh auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    }
+
+    #plateau div {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        font-size: 3rem;
+
+    }
+
+.noir{
+   /* couleur des cases "noires" */    
+    background-color: brown;
+}
+.tour_noir::before{
+    content: "♜" ;
+}
+.caval_noir::before{
+    content: "♞";
+}
+.fou_noir::before {
+    content: "♝"
+}
+
+.reine_noir::before {
+    content: "♛"
+}
+
+.roi_noir::before {
+    content: "♚"
+}
+
+.pion_noir::before {
+    content: "♟";
+}
+.tour_blanc::before {
+    content: "♖";
+}
+
+.caval_blanc::before {
+    content: "♘"
+}
+
+.fou_blanc::before {
+    content: "♗"
+}
+
+.reine_blanc::before {
+    content: "♕"
+}
+
+.roi_blanc::before {
+    content: "♔"
+}
+
+.pion_blanc::before{
+    content: "♙";
+}
+[class*="_noir"] {
+    color: green;
+}
+
+
